@@ -1,0 +1,540 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+img{
+    width: 30px;
+    height: 30px;
+}
+
+
+/* <-------cabesera-------------> */
+header{
+    width: 100% ;
+    height: 170px;
+    background-color: #10108a;
+}
+
+
+
+.conjunto-enlaces{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(20, 20, 134) ;
+    display: flex;
+}
+
+.baner{
+    width: 50%;
+    height: 100px;
+    background-color: rgb(20, 20, 134);
+    background-image: url(./img/images.jpg);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: center;
+}
+
+
+
+.enlaces-paginas{
+    width: 50%;
+    height: 40px;
+    background-color: rgb(20, 20, 134);
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+a{
+    display: inline-block;
+    color: white;
+    background-color: rgb(20, 20, 134);
+    padding: 10px 15px;
+    text-decoration: none;
+    list-style: none;
+    border-radius: 5px;
+}
+
+a:hover{
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+}
+/* <-----------iconos de enlaces-----------> */
+ .icon-facebook{
+    background-color:#3b5998 ;
+}
+
+ .icon-youtube{
+    background-color: red;
+}
+
+ .icon-twitter{
+    background-color: #00abf0 ;
+}
+/* <-----------fin de enlaces---------------> */
+
+
+/* <---------carrito de compras------------> */
+.carrito-compras{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: 2px solid  #ffb500;
+    border-radius: 10px;
+    position: fixed;
+    left: 65%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.coleccion{
+    width: 100%;
+    height: 40px;
+    background-color:  gold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.carrito-img{
+    width: 50px;
+    height: 40px;
+    background-image: url(./img/img4.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* <----------fin de carrito de compras-------> */
+
+
+/* <---------menu-----------> */
+     
+#btn-menu{
+    display: none;
+}
+
+.btn-menu{
+    background-image: url(./img/img3.jpg);
+    background-repeat: no-repeat;
+    background-size: 50px;
+}
+
+header label {
+    display: none;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid gold;
+}
+
+header label:hover{
+    cursor: pointer;
+    background-color:rgb(20, 20, 134) ;
+}
+
+.menu ul{
+    background-color: white;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 10px;
+
+}
+
+
+.menu li{
+    display: flex;
+    padding: 10px 20px;
+    color: rgb(20, 20, 134);
+    text-decoration: none;
+    flex-grow: 1;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-right: 1px solid white;
+}
+
+.menu li:hover{
+   background-color:rgb(20, 20, 134);  
+   color: white;
+   transition: 0.5s;
+   border-radius: 10px;
+}
+
+/* <--------fin de menu----------> */
+
+/* <----------card------------> */
+
+.card-contenedor{
+    margin-top: 30px;
+    background-color: white;
+    border: 2px solid rgb(20, 20, 134);
+    border-radius: 15px;
+    width: 800px;
+    height: 900px;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-right: auto;
+    display: grid;
+    /* align-content: center; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.card{
+    /* max-width: 28%; */
+    height: 355px;
+    background-color: white;
+    border: 2px solid gold;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+.img-card{
+    max-width: 100%;
+    /* background-color: yellowgreen; */
+    height: 220px;
+    background-image: url(https://www.bembos.com.pe/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/r/promo-bembos-clasica.webp);
+    background-size: 180px;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+/* <--------fin de card------> */
+
+/* <---------titulos---------> */
+.titulo-1{
+    font-size: 10px;
+    width: 800px;
+    height: 50px;
+    background-color: #ffb500;
+    border-top: 2px solid blue;
+    margin-top: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titulo-2{
+    font-size: 10px;
+    width: 800px;
+    height: 50px;
+    background-color: rgb(20, 20, 134);
+    border-top: 2px solid blue;
+    margin-top: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* <--------fin de titulos-----> */
+
+
+/* <----------stylos de h1 str-------->  */
+h1{
+    color: blue;
+}
+
+h2{
+    color: gold;
+    font-size: 20px;
+}
+
+h3{ 
+    color: gold;
+    border: 1px solid blue;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* <----------fin stylos de h1 str-------->  */ 
+
+
+/* <-------etiquetas------------> */
+em{
+    color: white;
+}
+
+button{
+    display: block;
+    width: 100%;
+    height: 25px;
+    background-color: rgb(20, 20, 134);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid gold;
+}
+
+span{
+    width: 100%;
+    color: rgb(20, 20, 134);
+    border: 1px solid #ffb500;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+p{
+    border-radius: 0 0 5px 5px;
+    background: #ffb500;
+    text-align: center;
+}
+
+strong{
+    color: red;
+}
+
+/* <---------fin de etiquetas---------> */
+
+
+/* <----------inicio de footer----------> */
+.contenedor{
+    margin-top: 40px;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(20, 20, 134);
+    display: flex;
+}
+
+
+.derechos-reservados{
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+
+.logo-footer{
+    width: 50%;
+    height: 100%;
+    background-image: url(./img/images.jpg);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* <-------------fin de footer------------> */
+
+/* <-------inicio de vercion movile-----------------> */
+
+@media (max-width: 800px){
+
+    /* <-------cabesera-movile-----------> */
+
+    header{
+        width: 800px ;
+        height: 150px;
+
+    }
+  
+    button{
+        display: block;
+        width: 100%;
+        height: 40px;
+        font-size: 20px;
+        background-color: rgb(20, 20, 134);
+        color: white;
+        border-radius: 5px;
+        border: 1px solid gold;
+    }
+
+    header label {
+        display: block;
+    }
+
+      /* <---------cabesera-enlaces-movile--------> */
+      .conjunto-enlaces{
+        width: 100%;
+        height: 100px;
+        background-color: rgb(20, 20, 134) ;
+        display: flex;
+        margin-bottom: 0;
+        border-bottom: 1px solid white;
+    }
+    
+    .baner{
+        width: 50%;
+        height: 100px;
+        background-color: rgb(20, 20, 134);
+        background-image: url(./img/images.jpg);
+        background-repeat: no-repeat;
+        background-size: 200px;
+        background-position: center;
+        border-bottom: 1px solid white;
+    }
+    
+    .enlaces-paginas{
+        width: 50%;
+        height: 35px;
+        background-color: rgb(20, 20, 134);
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* <----------fin de enalces-moviles--------> */
+
+/* <----------menu-------------> */
+    .menu{
+        position: absolute;
+        background-color:rgb(20, 20, 134);  
+        color: white;
+        width: 70%;
+        margin-left: -79%;
+         height: 355px;
+         transition: all 1s;
+    }
+
+
+    .menu ul{
+        flex-direction: column;
+        width: 100%;
+        height: 355px;
+    }
+    
+    .menu li{
+        width: 100%;
+        font-size: 30px;
+        font-family: sans-serif;
+        border-top: 1px solid white;
+    }
+
+
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    }
+  /* <---------fin de menu---------> */
+
+
+
+
+
+   
+/* <----------titulos---------> */
+    .titulo-1{
+        font-size: 20px;
+        width: 800px;
+        height: 110px;
+        background-color: #ffb500;
+        border-top: 2px solid blue;
+        margin-top: 15px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+
+
+    .titulo-2{
+        font-size: 20px;
+        width: 800px;
+        height: 110px;
+        background-color: rgb(20, 20, 134);
+        border-top: 2px solid blue;
+        margin-top: 15px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* <--------fin de titulo-movile------> */
+
+
+    /* <---------card-movile---------> */
+
+    .card-contenedor{
+        margin-top: 30px;
+        background-color: white;
+        border: 2px solid rgb(20, 20, 134);
+        border-radius: 15px;
+        width: 800px;
+        height: 900px;
+        margin-left: auto;
+        margin-top: 10px;
+        margin-right: auto;
+        display: grid;
+        align-content: center;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-gap: 20px;
+    }
+
+    .card{
+        max-width: 95%;
+        height: 400px;
+        background-color: white;
+        border: 2px solid gold;
+        border-radius: 15px;
+        margin-top: 0px;
+    }
+
+    .img-card{
+        max-width: 100%;
+       background-position: center;
+        height: 220px;
+        background-image: url(https://www.bembos.com.pe/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/r/promo-bembos-clasica.webp);
+        background-size: 230px;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+
+     /* <-----------fin de card-movile---------> */
+
+   
+     /* <--------------footer-movile--------> */
+    .contenedor{
+        margin-top: 40px;
+        width: 800px;
+        height: 200px;
+        background-color: rgb(20, 20, 134);
+        display: flex;
+    }
+    
+    
+    .derechos-reservados{
+        width: 50%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-gap: 10px;
+        text-align: center;
+        align-items: center;
+    }
+    
+    
+    .logo-footer{
+        width: 50%;
+        height: 100%;
+        background-image: url(./img/images.jpg);
+        background-size: 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    /* <-----------fin de footer-movile----------> */
+}
